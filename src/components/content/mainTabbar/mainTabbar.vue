@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <router-view></router-view>
     <tab-bar>
       <tab-bar-item path="/home" activeColor="red">
         <img slot="item_img" src="~assets/img/tabbar/home.svg" />
@@ -27,8 +26,8 @@
 </template>
 
 <script>
-import TabBar from "~components/tabbar/TabBar.vue";
-import TabBarItem from "~components/tabbar/TabBarItem.vue";
+import TabBar from "components/common/tabbar/TabBar.vue";
+import TabBarItem from "components/common/tabbar/TabBarItem.vue";
 export default {
   name: "App",
   components: {
